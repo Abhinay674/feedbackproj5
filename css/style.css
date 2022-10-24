@@ -1,0 +1,207 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
+
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+  background-color: #fff;
+  color: hsl(229, 6%, 66%);
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.holder .first {
+  margin-bottom: 2rem;
+}
+
+.second {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.third {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.fourth {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.fifth {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.holder {
+ display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(100px, auto); 
+  justify-self: center;
+  padding: 1.5rem;
+  grid-gap: 1.5rem;
+  margin: 15% 0;
+}
+
+.holder .first h1 {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.holder .first h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.holder .first p {
+  text-align: center;
+  font-size: 1rem;
+  line-height:1.5;
+}
+
+.holder .box {
+  margin-top: 0.6rem;
+  background-color: rgba(100%, 100%, 100%, 0.6);
+  padding: 1.5rem;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(84, 158, 242, 0.5);
+  border-radius: 5px;
+}
+
+.box h3 {
+  color: hsl(234, 12%, 34%);
+  padding-bottom: 3px;
+}
+
+.box p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.box img {
+  position: absolute;
+  width: 50px;
+  right: 25px;
+  top: 170px;
+}
+
+.fourth p,
+.fifth p {
+  font-size: 0.9rem;
+}
+
+@media (min-width:376px) and (max-width:1440px) {
+  body{
+    overflow:hidden;
+  }
+  .holder{
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap:2.3rem;
+    margin: 5% 10%;
+  }
+  .holder .first{
+    grid-column: 1 span / 3;
+  }
+   .holder .second{
+    grid-column: 1;
+    margin-top:8rem;
+  }
+  .holder .third{
+    margin-top: 0;
+  }
+   .holder .fourth{
+    grid-column: 2;
+    margin-top:-7.5rem;
+  } 
+  .holder .fifth{
+    grid-column: 3;
+    margin-top:-17rem;
+  }  
+  .holder .first h1 {
+    font-size: 1.45rem;
+
+  }
+  
+  .holder .first h2 {
+    font-size: 1.45rem;
+  }
+  
+  .holder .first p {
+    font-size: 0.6rem;
+  }
+  .holder .box {
+    padding: 2rem;
+    box-shadow: 2px 2px 30px rgba(84, 158, 242, 0.5);
+  }
+  .box h3 {
+    font-size:1.5rem;
+  }
+  
+  .box p {
+    font-size: 0.85rem;
+  }
+  .box img {
+    width: 70px;
+    right: 35px;
+    top: 150px;
+  }
+  .fourth p,
+.fifth p {
+  font-size: 0.85rem;
+}
+    
+
+
+}
